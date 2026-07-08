@@ -27,6 +27,14 @@ form {
       width: 100%;
       box-sizing: border-box;
     }
+
+    &:has([required]) span {
+      &::before {
+        content: "*";
+        color: red;
+        margin-right: 5px;
+      }
+    }
   }
 
   fieldset {
@@ -39,16 +47,23 @@ form {
     outline: none;
 
     &:focus-visible {
-      /* border-color: red; */
+      border-color: #9bce19;
+    }
+
+    &:user-valid {
+      border-color: green;
+    }
+    &:user-invalid {
+      border-color: red;
     }
   }
 
   input,
   textarea {
-    color: red;
+    /* color: red;
     &::placeholder {
       color: blueviolet;
-    }
+    } */
   }
 
   input[type="checkbox"] {

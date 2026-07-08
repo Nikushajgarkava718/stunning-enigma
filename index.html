@@ -37,17 +37,26 @@
 
       <form action="#">
         <label for="user_name"
-          >Username:
+          ><span>Username:</span>
           <input
             type="text"
             id="user_name"
             name="username"
             placeholder="Enter your username"
+            required
           />
         </label>
 
         <label for="user_age"
-          >age:
+          ><span>age:</span>
+          <input
+            type="range"
+            id="user_age"
+            name="age"
+            max="100"
+            min="15"
+            step="5"
+          />
           <input
             type="number"
             id="user_age"
@@ -59,32 +68,39 @@
         </label>
 
         <label for="user_mail"
-          >Enter Mail:
+          ><span>Enter Mail:</span>
           <input
             type="email"
             id="user_mail"
             name="mail"
             placeholder="Example@gmail.com"
+            required
           />
         </label>
 
         <label for="user_password"
-          >Password:
-          <input type="password" id="user_password" name="password" />
+          ><span>Password:</span>
+          <input
+            type="password"
+            id="user_password"
+            minlength="5"
+            name="password"
+            required
+          />
         </label>
 
         <label for="user_avatar"
-          >Avatar:
+          ><span>Avatar:</span>
           <input type="file" id="user_avatar" name="avatar" accept="pdf" />
         </label>
 
         <label for="user_birthdate"
-          >Birthdate:
-          <input type="date" id="user_birthdate" name="birthdate" />
+          ><span>Birthdate:</span>
+          <input type="date" id="user_birthdate" name="birthdate" required />
         </label>
 
         <label for="user_city"
-          >City:
+          ><span>City:</span>
           <select name="city" id="user_city">
             <option value="">Select your city</option>
             <option value="new_york">New york</option>
@@ -95,7 +111,7 @@
         </label>
 
         <label for="user_bio"
-          >bio
+          ><span>bio</span>
           <textarea
             id="user_bio"
             name="bio"
