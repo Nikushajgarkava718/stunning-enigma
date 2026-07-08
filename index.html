@@ -27,11 +27,62 @@
   <body>
     <section class="container">
       <h1>Meta Tags</h1>
-      <form action="#">
-        <input type="text" id="keyword" name="test" />
+
+      <!-- <form action="https://www.google.com/search">
+        <input type="text" id="keyword" name="q" />
         <button type="submit">Search</button>
-        <!-- <button type="reset">Reset</button>
-      <button type="button">Button</button> -->
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+      </form> -->
+
+      <form action="#">
+        <label for="user_name"
+          >Username:
+          <input
+            type="text"
+            id="user_name"
+            name="username"
+            placeholder="Enter your username"
+          />
+        </label>
+
+        <label for="user_age"
+          >age:
+          <input
+            type="number"
+            id="user_age"
+            name="age"
+            max="100"
+            min="15"
+            step="5"
+          />
+        </label>
+
+        <label for="user_mail"
+          >Enter Mail:
+          <input
+            type="email"
+            id="user_mail"
+            name="mail"
+            placeholder="Example@gmail.com"
+          />
+        </label>
+
+        <label for="user_password"
+          >Password:
+          <input type="password" id="user_password" name="password" />
+        </label>
+
+        <label for="user_bio"
+          >bio
+          <textarea
+            id="user_bio"
+            name="bio"
+            placeholder="write something about yourself"
+          ></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
       </form>
     </section>
   </body>
