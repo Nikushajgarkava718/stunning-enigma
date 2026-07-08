@@ -73,6 +73,11 @@
           <input type="password" id="user_password" name="password" />
         </label>
 
+        <label for="user_avatar"
+          >Avatar:
+          <input type="file" id="user_avatar" name="avatar" accept="pdf" />
+        </label>
+
         <label for="user_bio"
           >bio
           <textarea
@@ -80,18 +85,6 @@
             name="bio"
             placeholder="write something about yourself"
           ></textarea>
-        </label>
-
-        <label for="agree_terms">
-          <input type="checkbox" name="terms" id="agree_terms" />
-          By tapping checkbox , you agree to create an account and to Facebook's
-          Terms of Service
-        </label>
-
-        <label for="agree_contact">
-          <input type="checkbox" name="contacts" id="agree_contact" />
-          People who use our service may have uploaded your contact information
-          to Facebook
         </label>
 
         <fieldset>
@@ -123,6 +116,18 @@
             />Other</label
           >
         </fieldset>
+
+        <label for="agree_terms">
+          <input type="checkbox" name="terms" id="agree_terms" />
+          By tapping checkbox , you agree to create an account and to Facebook's
+          Terms of Service
+        </label>
+
+        <label for="agree_contact">
+          <input type="checkbox" name="contacts" id="agree_contact" />
+          People who use our service may have uploaded your contact information
+          to Facebook
+        </label>
 
         <button type="submit">Submit</button>
       </form>

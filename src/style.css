@@ -20,6 +20,13 @@ form {
     &:has(input[type="checkbox"], input[type="radio"]) {
       flex-direction: row;
     }
+    input[type="file"] {
+      border: 0.8px solid rgb(118, 118, 118);
+      border-radius: 3px;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
 
   fieldset {
