@@ -33,11 +33,20 @@ form {
     /* border: none; */
   }
   input,
-  textarea {
+  textarea,
+  select {
     padding: 5px;
     outline: none;
+    color: red;
     &:focus-visible {
-      border-color: red;
+      /* border-color: red; */
+    }
+  }
+
+  input,
+  textarea {
+    &::placeholder {
+      color: blueviolet;
     }
   }
 
