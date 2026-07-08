@@ -16,10 +16,28 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
+    gap: 5px;
+    &:has(input[type="checkbox"], input[type="radio"]) {
+      flex-direction: row;
+    }
+  }
+
+  fieldset {
+    /* border: none; */
   }
   input,
   textarea {
     padding: 5px;
+    outline: none;
+    &:focus-visible {
+      border-color: red;
+    }
+  }
+
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: red;
   }
 
   textarea {
