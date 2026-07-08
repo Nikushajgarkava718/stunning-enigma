@@ -37,7 +37,7 @@ form {
   select {
     padding: 5px;
     outline: none;
-    color: red;
+
     &:focus-visible {
       /* border-color: red; */
     }
@@ -45,6 +45,7 @@ form {
 
   input,
   textarea {
+    color: red;
     &::placeholder {
       color: blueviolet;
     }
